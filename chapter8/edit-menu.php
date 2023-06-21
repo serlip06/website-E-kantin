@@ -14,7 +14,8 @@ $menu = mysqli_fetch_assoc($query);
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Edit Menu</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
 </head>
@@ -68,8 +69,8 @@ header("refresh:3;url=index.php");
 <label for="nama" class="col-sm-2 col-form-label">Kategori</label>
 <div class="col-sm-10">
 <select class="form-control" id="kategori" name="kategori">
-<option value="makanan" <?php if ($menu['kategori'] == "makanan") echo "selected" ?>>makanan</option>
-<option value="minuman" <?php if ($menu['kategori'] == "minuman") echo "selected" ?>>minuman</option>
+<option value="makanan" <?php if ($menu['kategori'] == "makanan") echo "selected" ?>>Makanan</option>
+<option value="minuman" <?php if ($menu['kategori'] == "minuman") echo "selected" ?>>Minuman</option>
 </select>
 </div>
 </div>
@@ -92,9 +93,9 @@ header("refresh:3;url=index.php");
 </div>
 </div>
 <div class="mb-3 row">
-<label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
+<label for="alamat" class="col-sm-2 col-form-label">Gambar</label>
 <div class="col-sm-10">
-<img src="Uploads/<?php echo $menu['gambar'] ?>" style="width: 100px;" class="mb-2">
+<img src="uploads/<?php echo $menu['gambar'] ?>" style="width: 100px;" class="mb-2">
 <input type="file" class="form-control" id="gambar" name="gambar">
 </div>
 </div>

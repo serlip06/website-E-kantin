@@ -1,6 +1,5 @@
 <?php
 include("config.php");
-include("foradmin.php");
 $gagalhapus = "Gagal Menghapus Data";
 $gagaledit = "Gagal Mengedit Data";
 $sukseshapus = "Berhasil Menghapus Data";
@@ -13,7 +12,8 @@ $suksesedit = "Berhasil Mengedit Data";
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daftar Produk</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
 </head>
@@ -111,10 +111,11 @@ $gambar             = $menu['gambar'];
 <td scope="row"><?php echo $harga_produk ?></td>
 <td scope="row"><?php echo $stok ?></td>
 <td style="text-align: center;">
-<img src="Uploads/<?php echo $gambar ?>" style="width: 90px;"></td>
+<img src="uploads/<?php echo $gambar ?>" style="width: 90px;"></td>
 <td scope="row">
 <a href="edit-menu.php?id=<?php echo $id ?>"><button type="button" class="btn btn-warning">Edit</button></a>
-<a href="hapus-produk.php?id=<?php echo $id ?>" onclick="return confirm('Yakin mau delete data?')"><button type="button" class="btn btn-danger ms-1">Delete</button></a>
+<a href="hapus-produk.php?id=<?php echo $id ?>" onclick="return confirm('Yakin mau delete data?')">
+<button type="button" class="btn btn-danger ms-1">Delete</button></a>
 </td>
 </tr>
 <?php

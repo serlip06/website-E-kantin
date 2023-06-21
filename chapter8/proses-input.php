@@ -19,7 +19,8 @@ $harga_produk       = $_POST['harga_produk'];
 $stok               = $_POST['stok'];
 $gambar             = strval(htmlspecialchars(basename($_FILES["gambar"]["name"])));
 // buat query
-$sql = "insert into menu(id,nama_produk,kategori,deskripsi_produk,harga_produk,stok,gambar) values ('$id','$nama_produk','$kategori','$deskripsi_produk','$harga_produk','$stok','$gambar')";
+$sql = "insert into menu(id,nama_produk,kategori,deskripsi_produk,harga_produk,stok,gambar
+values ('$id','$nama_produk','$kategori','$deskripsi_produk','$harga_produk','$stok','$gambar')";
 $query = mysqli_query($koneksi, $sql);
 }
 // apakah query simpan berhasil?
