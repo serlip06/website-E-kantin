@@ -9,7 +9,8 @@ $sukses = '';
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Tambah User</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">    
 <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
 </head>
@@ -56,19 +57,23 @@ header("refresh:3;url=tambah-user.php");
 </div>
 <div class="form-group">
 <label for="InputEmail">Alamat Email</label>
-<input type="email" class="form-control" id="InputEmail" name="email" aria-describeby="emailHelp" placeholder="Masukkan email">
+<input type="email" class="form-control" id="InputEmail" name="email"
+ aria-describeby="emailHelp" placeholder="Masukkan email">
 </div>
 <div class="form-group">
 <label for="username">Username</label>
-<input type="text" class="form-control" id="username" name="username" placeholder="Masukkan username">
+<input type="text" class="form-control" id="username" name="username" 
+placeholder="Masukkan username">
 </div>
 <div class="form-group">
 <label for="InputPassword">Password</label>
-<input type="password" class="form-control" id="InputPassword" name="password" placeholder="Password">
+<input type="password" class="form-control" id="InputPassword" name="password"
+ placeholder="Password">
 </div>
 <div class="form-group">
 <label for="InputPassword">Balance</label>
-<input type="number" class="form-control" id="balance" name="balance" placeholder="Balance">
+<input type="number" class="form-control" id="balance" name="balance"
+ placeholder="Balance">
 </div>
 <div class="form-group">
 <label for="role">Role</label>

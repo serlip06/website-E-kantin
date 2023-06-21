@@ -43,7 +43,8 @@ if ($result = mysqli_query($koneksi, $query)) return mysqli_num_rows($result);
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Register Page</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -78,19 +79,23 @@ header("refresh:3;url=login.php");                           }
 <?php endif; ?>
 <div class="form-group">
 <label for="name">Nama</label>
-<input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Nama">
+<input type="text" class="form-control" id="name" 
+name="name" placeholder="Masukkan Nama">
 </div>
 <div class="form-group">
 <label for="InputEmail">Alamat Email</label>
-<input type="email" class="form-control" id="InputEmail" name="email" aria-describeby="emailHelp" placeholder="Masukkan email">
+<input type="email" class="form-control" id="InputEmail"
+ name="email" aria-describeby="emailHelp" placeholder="Masukkan email">
 </div>
 <div class="form-group">
 <label for="username">Username</label>
-<input type="text" class="form-control" id="username" name="username" placeholder="Masukkan username">
+<input type="text" class="form-control" id="username"
+ name="username" placeholder="Masukkan username">
 </div>
 <div class="form-group">
 <label for="InputPassword">Password</label>
-<input type="password" class="form-control" id="InputPassword" name="password" placeholder="Password">
+<input type="password" class="form-control" id="InputPassword"
+ name="password" placeholder="Password">
 </div>
 <button type="submit" name="submit" class="btn btn-primary btn-block">Register</button>
 <div class="form-footer mt-2">

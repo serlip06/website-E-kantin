@@ -18,7 +18,8 @@ $password = mysqli_real_escape_string($koneksi, $password);
 if (!empty(trim($name)) && !empty(trim($username)) && !empty(trim($email)) && !empty(trim($password)) && !empty(trim($role))) {
 if (cek_nama($username, $koneksi) == 0) {
 $pass  = password_hash($password, PASSWORD_DEFAULT);
-$query = "INSERT INTO users (balance, role, username, name, email, password ) VALUES ('$balance','$role','$username','$name','$email','$pass')";
+$query = "INSERT INTO users (balance, role, username, name, email, password )
+VALUES ('$balance','$role','$username','$name','$email','$pass')";
 $result   = mysqli_query($koneksi, $query);
 if ($result) {
 header('Location: tambah-user.php?status=sukses');
